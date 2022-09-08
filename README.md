@@ -1,34 +1,13 @@
-## 딥러닝을 이용해서 손가락을 인식하여 마우스를 컨트롤하는 프로젝트입니다.
+## 본 레포지스토리는 캐글대회에 참여해보고 공부해보는 공간입니다.
 ---
-👉 사용한 모듈: cv2, mediapipe, pyautogui
+👉 참여대회
 
-👉 사용한 딥러닝: mediapipe-hands https://google.github.io/mediapipe/solutions/hands
+1. Digit Recognizer (2022-09-07 ~ 2022-09-08): https://www.kaggle.com/competitions/digit-recognizer/leaderboard
 
----
-👉 프로젝트의 기능 (ver. 1): 웹캠에 보이는 손가락을 이용하여 마우스를 움직이고 클릭할 수 있습니다.
+![화면 캡처 2022-09-08 130038](https://user-images.githubusercontent.com/38881094/189032586-7f8d437f-72cf-4d61-ba00-d6b2b1c9ae42.png)
 
----
+![화면 캡처 2022-09-08 130054](https://user-images.githubusercontent.com/38881094/189032609-9aeddd18-ae8d-44f8-aa16-d6ac8c9bf814.png)
 
-![image](https://user-images.githubusercontent.com/38881094/188765953-fc8d255c-48f7-43f4-bf5d-5cd18c0bca9a.png)
+2. ing...
 
-👉 위의 점들의 간격을 생각하여 계산했습니다.
 
-```
-hands_points = { 
-            'wrist': hand_landmarks.landmark[0],
-            'thumb': [x for x in hand_landmarks.landmark[1:5]],
-            'index': [x for x in hand_landmarks.landmark[5:9]],
-            'middle': [x for x in hand_landmarks.landmark[9:13]],
-            'ring': [x for x in hand_landmarks.landmark[13:17]],
-            'pinky': [x for x in hand_landmarks.landmark[17:21]]
-        }
-```
-
-👉 먼저 각 점들을 기억하기 쉽게 손가락이름으로 지정해놓았습니다.
-
-👉 조건들을 이용하여 마우스를 움직이고 클릭 할 수 있습니다.
-
----
-👉 ver. 1 : 아직 조건문이 미숙하여 약간의 오류가 생김 
-
--> (next version) 초기 설정을 통해 자주 사용하는 거리를 입력하여 거리를 계산하여 멀리서도 작동하게 바꿀 예정
