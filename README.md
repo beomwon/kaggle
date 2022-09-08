@@ -2,7 +2,9 @@
 ---
 👉 참여대회
 
-1. Digit Recognizer (2022-09-07 ~ 2022-09-08): https://www.kaggle.com/competitions/digit-recognizer/leaderboard
+1. Digit Recognizer (2022-09-07 ~ 2022-09-08): 
+
+https://www.kaggle.com/competitions/digit-recognizer/leaderboard
 
 ![화면 캡처 2022-09-08 130038](https://user-images.githubusercontent.com/38881094/189032586-7f8d437f-72cf-4d61-ba00-d6b2b1c9ae42.png)
 
